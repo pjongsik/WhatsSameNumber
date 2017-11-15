@@ -18,6 +18,7 @@ namespace WhatsSameNumber
             return controls;
         }
 
+
         private static void GetChildrenCore<T>(Control container, List<T> controls) where T : class
         {
             var fields = container.GetType().GetFields(BindingFlags.Instance | BindingFlags.NonPublic);
